@@ -5,4 +5,5 @@ export interface Accommodation {
     location: string;
     capacity: number;
     pricePerPerson: number;
+    image: string;
 }

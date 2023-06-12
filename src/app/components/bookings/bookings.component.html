@@ -1,1 +1,18 @@
-<p>bookings works!</p>
+<p-table [value]="bookings" [paginator]="true" [rows]="5" >
+    <ng-template pTemplate="header">
+        <th>Accommodation</th>
+        <th>Date from</th>
+        <th>Date to</th>
+        <th>Broj osoba</th>
+        <th>Cena</th>
+    </ng-template>
+    <ng-template pTemplate="body" let-booking>
+        <tr>
+            <td>{{booking.accommodation.name}}</td>
+            <td>{{booking.dateFrom | date}}</td>
+            <td>{{booking.dateTo | date}}</td>
+            <td>{{booking.numberOfPersons | number: '1.0-0'}}</td>
+            <td>{{booking.price | tax}}</td>
+        </tr>
+    </ng-template>
+</p-table>

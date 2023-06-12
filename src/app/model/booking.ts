@@ -1,3 +1,5 @@
+import { Accommodation } from "./accommodation";
+
 export interface Booking {
     id: number;
     numberOfPersons: number;
@@ -5,6 +7,5 @@ export interface Booking {
     dateTo: Date;
     price: number;
 
-    userId: number;
-    accommodationId: number;
+    accommodation: Accommodation;
 }

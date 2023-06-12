@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem; height: 27rem;" appFrame>
+    <img [src]="accommodation.image" class="card-img-top" alt="..." height="200rem">
+    <div class="card-body card-details-container">
+      <h5 class="card-title">{{accommodation.name}}</h5>
+      <p class="card-text">{{accommodation.type}}</p>
+      <p class="card-text">{{accommodation.location}}</p>
+      <p class="card-text">{{'Cena po osobi: ' + (accommodation.pricePerPerson | currency)}}</p>
+      <a class="btn btn-primary" (click)="handleBook()">Book</a>
+    </div>
+</div>

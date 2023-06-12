@@ -13,7 +13,8 @@ export class AccommodationService {
       capacity: 7,
       type: 'Vila',
       location: 'Zajecar',
-      pricePerPerson: 50.00
+      pricePerPerson: 50.00,
+      image: '../../assets/img/zajecar.jpg'
     },
     {
       id: 2,
@@ -21,7 +22,8 @@ export class AccommodationService {
       capacity: 20,
       type: 'Apartman',
       location: 'Sokobanja',
-      pricePerPerson: 270.00
+      pricePerPerson: 270.00,
+      image: '../../assets/img/hotelSunce.jpg'
     },
     {
       id: 3,
@@ -29,7 +31,8 @@ export class AccommodationService {
       capacity: 15,
       type: 'Apartman',
       location: 'Kotor',
-      pricePerPerson: 120.00
+      pricePerPerson: 120.00,
+      image: '../../assets/img/biserJadrana.jpg'
     },
     {
       id: 4,
@@ -37,7 +40,8 @@ export class AccommodationService {
       capacity: 5,
       type: 'Kuca',
       location: 'Novi Sad',
-      pricePerPerson: 30.00
+      pricePerPerson: 30.00,
+      image: '../../assets/img/rezidencijaPeric.jpg'
     }
   ];
 
